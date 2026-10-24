@@ -2,41 +2,30 @@
 GET http://localhost:5039/games
 
 ###
-GET http://localhost:5039/games/10
+GET http://localhost:5039/games/3
 
 ### 
 POST http://localhost:5039/games
 Content-Type: application/json
 
 {
-  "name" : "Super mario",
-  "genreId" : 3,
-  "Price" : 59.99,
-  "releaseDate" : "2023-10-10"
+  "name" : "TEST GAME",
+  "genreId" : 1,
+  "price" : 9.99,
+  "releaseDate" : "1991-02-01"
 }
 
+
 ###
-POST http://localhost:5039/games
+PUT http://localhost:5039/games/2
 Content-Type: application/json
 
 {
-  "name" : "Assissins creed"
-  "genre" : "Platformer",
-  "Price" : 515.99,
-  "releaseDate" : "2023-10-10"
+  "name" : "Street Fighter II Turbo",
+  "genreId" : 1,
+  "price" : 19.99,
+  "releaseDate" : "1991-02-01"
 }
 
 ###
-PUT http://localhost:5039/games/10
-Content-Type: application/json
-
-{
-  "id": 1,
-  "name": "",
-  "genre": "Fighting",
-  "price": 229.99,
-  "releaseDate": "1992-07-15"
-}
-
-###
-DELETE http://localhost:5039/games/4
+DELETE http://localhost:5039/games/3
