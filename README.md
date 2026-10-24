@@ -4,12 +4,12 @@ A RESTful API built with **C# and ASP.NET Core Minimal APIs** for managing video
 
 ## Features
 
-- Create, read, update, and delete games
-- Retrieve all available genres
-- Persist data to SQLite via EF Core
+- Implement CRUD operations for game management
+- Retrieve all available game genres
+- Persist game data using SQLite and EF Core with asynchronous database operations
 - Apply database migrations automatically at startup
 - Seed the database with predefined genres
-- Request validation via `AddValidation()`
+- Validate API requests using `AddValidation()`
 
 ## Tech Stack
 
